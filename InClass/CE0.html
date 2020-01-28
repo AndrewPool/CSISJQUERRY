@@ -1,0 +1,54 @@
+<!DOCTYPE html><html>
+<head>
+	<script>
+	alert(3+5)
+	alert(3*5)
+	alert(3/5)
+
+	var a = 3
+	b = 5
+	
+	alert(a+b)
+	alert(a*b)
+	alert(a/b)
+	
+	var book = {
+	title: "stitle",
+	author: "sname"
+}
+	
+	var books = [
+	{
+title:" catcher in the rye",
+author: "jamie"
+}	
+,
+	{
+title: "I dream of a Jin",
+author:"andy"
+}
+]
+
+	
+	updateFunc = function(){
+var printString = " "
+	for(i = 0; i< books.length; i++){
+
+	var printString = printString + " " + books[i].title + " by:"+books[i].author + "\n "
+	
+	}
+
+	document.getElementById("test").innerHTML = printString
+}
+//document.getElementById("test").innerHTML = "fail"
+	
+	</script>
+</head>
+<body>
+  <h1>2470CE00</h1>
+  <div id="test"></div>
+
+  <script>updateFunc()</script>
+</body>
+
+</html>
